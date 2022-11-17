@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="refresh" content="15" />
+    <title>Page Reload after 15 seconds - Online Web Tutor</title>  
+</head>
+
+<body>
+    <h2>Hello, I am sample page which will reload in 15 seconds</h2>
+    
+    <script type="text/javascript">
+        setTimeout(function(){
+            location.reload();
+        },15000); // 15000 milliseconds = 15 seconds
+    </script>
+    <script type="text/javascript">
+        function autoRefreshPage(){
+            window.location = window.location.href;
+        }
+        setInterval('autoRefreshPage()', 15000); // 15 seconds
+    </script>
+    
+</body>
+</html>

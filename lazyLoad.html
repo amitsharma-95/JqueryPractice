@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lazy Loading Concept in Images Using jQuery Plugin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        .lazy-load-div img {
+            width: 302px;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Lazy Loading Concept in Images Using jQuery Plugin</h3>
+        <div class="row lazy-load-div">
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2022/01/How-To-Read-JSON-File-in-CodeIgniter-4-Tutorial.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2021/12/How-To-Create-Zip-File-and-Download-in-Laravel-8.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2022/01/How-To-Read-CSV-File-in-CodeIgniter-4-Tutorial.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2021/12/How-To-Check-Date-Is-Weekend-In-JavaScript-Tutorial.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2021/12/Laravel-8-Store-Log-Of-Eloquent-SQL-Queries.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2021/12/How-to-Override-Auth-Register-Method-in-Laravel-8.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2021/12/How-To-Create-Zip-File-and-Download-in-Laravel-8.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2022/01/How-To-Read-CSV-File-in-CodeIgniter-4-Tutorial.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2021/12/How-To-Check-Date-Is-Weekend-In-JavaScript-Tutorial.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2021/12/Laravel-8-Store-Log-Of-Eloquent-SQL-Queries.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2021/12/How-to-Override-Auth-Register-Method-in-Laravel-8.png">
+            </div>
+
+            <div class="col-md-8">
+                <img data-original="https://onlinewebtutorblog.com/wp-content/uploads/2021/12/How-To-Create-Zip-File-and-Download-in-Laravel-8.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("img").lazyload({
+                effect: "fadeIn"
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

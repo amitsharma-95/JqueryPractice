@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Basic Use of jQuery DataTable</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <button></button> -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css">
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Basic Use of jQuery DataTable</h2>
+  <table id="tbl-employees">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ashish Kumar</td>
+                <td>PHP</td>
+                <td>Office ABC</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>Vijay Kumar</td>
+                <td>Wordpress</td>
+                <td>Office PQR</td>
+                <td>80000</td>
+            </tr>
+            <tr>
+                <td>Dhananjay Negi</td>
+                <td>Node Js</td>
+                <td>Office XYZ</td>
+                <td>150000</td>
+            </tr>
+     </tbody>
+  </table>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+<!-- //button -->
+  <script src="https://cdn.datatables.net/buttons/1.6.4/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.6.4/js/buttons.html5.min.js"></script>
+  
+  <script>
+
+    // $(document).ready(function() {
+    //     $('#tbl-employees').DataTable();
+    // });
+
+//     $(document).ready(function() {
+//   $('#tbl-employees').DataTable({
+//     "aoColumnDefs": [
+//       { "bSortable": false, "aTargets": [ 0, 1, 2, 3 ] }
+//     ]
+//   });
+// });
+
+// $(document).ready(function() {
+//   $('#tbl-employees').DataTable({
+//     "ordering": false
+//     });
+// });
+
+// $(document).ready(function() {
+//   $('#tbl-employees').DataTable({
+//     "columnDefs": [
+//       { "orderable": false, "targets": [0,1,2,3] }
+//     ]
+//   });
+// });
+
+// $(document).ready(function() {
+//     $('#tbl-employees').DataTable({
+//       searching: false
+//     });
+// });
+
+// $(document).ready(function() {
+//   $('#tbl-employees').DataTable({
+//     bFilter: false
+//     });
+// });
+
+// $(document).ready(function() {
+//   $('#tbl-employees').DataTable({
+//     "aoColumnDefs": [
+//       { "bSearchable": false, "aTargets": [ 0, 1, 2, 3 ] }
+//     ]
+//   });
+// });
+
+// $(document).ready(function() {
+//   $('#tbl-employees').DataTable({
+//     lengthMenu: [[ 100, 250, -1], [ 100, 250, "All"]], // page length options
+//   });
+// });
+
+$(document).ready(function() {
+        $('#tbl-employees').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+		        'print',
+                'pdfHtml5'
+            ]
+        } );
+    });
+  </script>
+
+</body>
+</html>

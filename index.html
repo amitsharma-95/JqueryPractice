@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Allow Only Numbers in Textbox jQuery On Keypress</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container" style="margin-top: 40px;">
+        <div class="form-group col-sm-4">
+            <label for="phone">Phone Number:</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone" pattern="[1-9]{1}[0-9]{9}">
+            <span id="phone_err" style="color: red; display:none;">Only Numbers allowed.</span>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#phone").keypress(function(e) {
+                var keyCode = e.keyCode || e.which;
+
+                //Regex for Valid Characters i.e. Numbers.
+                var regex = /^[0-9]+$/;
+
+                //Validate TextBox value against the Regex.
+                var isValid = regex.test(String.fromCharCode(keyCode));
+                if (!isValid) {
+                    $("#phone_err").show();
+                }else{
+                    $("#phone_err").hide();
+                }
+                return isValid;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

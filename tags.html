@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tag</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tagmanager/3.0.2/tagmanager.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card m-auto w-75">
+                    <div class="card-header text-center text-white bg-primary" style="padding: 8px;margin-top: 15px;">
+                        <h4>Tag </h4>
+                    </div>
+                    <div class="card-body" style="margin-top: 19px;">
+                        <form>
+                            <div class="form-group">
+                                <label>Name:</label>
+                                <input type="text" name="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Add Tags:</label><br/>
+                                <input type="text" name="tags" placeholder="Tags" class="tm-input form-control tm-input-info" />
+                            </div>
+                            <div class="form-group">
+                                <label>Details:</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-success">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tagmanager/3.0.2/tagmanager.min.js"></script>
+
+    <script type="text/javascript">
+        $(".tm-input").tagsManager();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Days Difference Between Two Dates</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // calculation of no. of days between two date 
+
+        // To set two dates to two variables
+        var date1 = new Date("12/01/2021"); // mm/dd/yy format
+
+        var date2 = new Date("12/11/2021"); // mm/dd/yy format
+
+        // To calculate the time difference of two dates
+        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+        // To calculate the no. of days between two dates
+        var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+        //To display the final no. of days (result)
+        console.log(Difference_In_Days + " days");
+    </script>
+    <script type="text/javascript">
+        var d = new Date();
+        var n = d.getDay();
+
+        // 6 = Saturday, 0 = Sunday
+
+        if (n == 6 || n == 0) {
+            console.log("It's weekend!");
+        } else {
+            console.log("It's not weekend");
+        }
+    </script>
+</body>
+
+</html>

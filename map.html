@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Autocomplete Places Search Box using Google Maps JavaScript API</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 m-auto">
+                <div class="card shadow">
+                    <div class="card-header bg-primary">
+                        <h5 class="card-title text-white">Autocomplete Places Search Box using Google Maps JavaScript API</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="autocomplete"> Location </label>
+                            <input type="text" name="autocomplete" id="autocomplete" class="form-control" placeholder="Select Location">
+                        </div>
+
+                        <div class="form-group" id="lat_area">
+                            <label for="latitude"> Latitude </label>
+                            <input type="text" name="latitude" id="latitude" class="form-control">
+                        </div>
+
+                        <div class="form-group" id="long_area">
+                            <label for="latitude"> Longitude </label>
+                            <input type="text" name="longitude" id="longitude" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaxxxXSQRl-XLDybXXX9cBcNtoZ1HXXxXxxXX&libraries=places&callback=initAutocomplete" type="text/javascript"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>

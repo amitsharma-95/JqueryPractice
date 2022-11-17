@@ -1,0 +1,20 @@
+<script>
+    var stringWithLineBreaks = `
+                              Online Web Tutor 
+          project 
+                 I've got 
+    Breaks
+             
+    `;
+    
+    console.log(removeNewlines(stringWithLineBreaks));
+    
+    function removeNewlines(str) {
+        //remove line breaks from str
+        str = str.replace(/\s{2,}/g, ' ');
+        str = str.replace(/\t/g, ' ');
+        str = str.toString().trim().replace(/(\r\n|\n|\r)/g,"");
+        console.log(str);
+    }
+    </script>
+    

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Get Set Attributes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container" style="margin-top: 40px;">
+        <div class="row">
+            <!-- Getting Attributes -->
+            <a href="https://www.google.com/" target="_blank" id="myLink">Google</a>
+            <!-- Getting Attributes End -->
+
+            <!-- Setting Attributes -->
+            <button type="button" id="myBtn">Click Me</button>
+
+            <a href="#" id="myLink1">Online Web Tutor</a>
+            <!-- Setting Attributes End-->
+
+            <!-- Removing Attributes -->
+            <a href="https://www.google.com/" id="myLink2">Google</a>
+            <!-- Removing Attributes -->
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        // ******* Getting Attributes **********//
+        // Selecting the element by ID attribute
+        var link = document.getElementById("myLink");
+
+        // Getting the attributes values
+        var href = link.getAttribute("href");
+        console.log(href);
+        // alert(href); // Outputs: https://www.google.com/
+
+        var target = link.getAttribute("target");
+        console.log(target);
+        // alert(target); // Outputs: _blank
+        // ******* Getting Attributes End**********//
+
+        // ******* Setting Attributes **********//
+        // Selecting the element
+        var btn = document.getElementById("myBtn");
+
+        // Setting new attributes
+        btn.setAttribute("class", "click-btn");
+        btn.setAttribute("disabled", "");
+
+        // Selecting the element
+        var link = document.getElementById("myLink1");
+
+        // Changing the href attribute value
+        link.setAttribute("href", "https://onlinewebtutorblog.com/");
+
+        // ******* Setting Attributes  End**********//
+
+        // ******* Removing Attributes **********//
+        // Selecting the element
+        var link = document.getElementById("myLink2");
+
+        // Removing the href attribute
+        link.removeAttribute("href");
+        // ******* Removing Attributes  End**********//
+
+
+        // Get Last Character of String Using slice() Method
+        //...charAt() Method
+
+        const str = 'OnlineWebTutor';
+
+        const last = str.slice(-1);
+        console.log(last); // 'r'
+
+        const last2 = str.slice(-2);
+        console.log(last2); // 'or'
+
+        const last3 = str.slice(-3);
+        console.log(last3); // 'tor'
+
+        // Get Last Character of String Using charAt() Method
+
+        const str = 'OnlineWebTutor';
+
+        const last = str.charAt(str.length - 1);
+
+        console.log(last); // r
+
+
+        // Remove Whitespaces Using ‘replace’ & regex
+        const str = ' h   e   l    l  o ';
+
+        const noWhitespace = str.replace(/\s/g, '');
+
+        console.log(noWhitespace); // 'hello'
+
+
+    </script>
+
+</body>
+
+</html>

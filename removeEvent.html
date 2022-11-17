@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Remove All Event Listeners From an Element</title>
+</head>
+
+<body>
+    <div id="element-box" style="background-color: salmon; width: 100px; height: 100px;padding:20px;">
+        Box 1
+    </div>
+
+    <script>
+        const elementBox = document.getElementById('element-box');
+
+        // add 2 event listeners
+        elementBox.addEventListener('click', function handleClick() {
+            console.log('div element clicked first');
+        });
+
+        elementBox.addEventListener('click', function handleClick() {
+            console.log('div element clicked second');
+        });
+
+        // Remove event listeners from Element
+        elementBox.replaceWith(elementBox.cloneNode(true));
+    </script>
+
+    <!-- Remove Special Characters From String -->
+    <script>
+
+        var str = 'Hello !@#$%^Online &&Web *& Tutor?.';
+
+        var noSpecialCharacters = str.replace(/[^a-zA-Z0-9 ]/g, '');
+
+        console.log(noSpecialCharacters);
+
+    </script>
+</body>
+
+</html>

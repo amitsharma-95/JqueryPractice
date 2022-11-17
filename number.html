@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Allow only 10 Numbers in Textbox Using jQuery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h4>Allow only 10 Numbers in Textbox Using jQuery</h4>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Allow only 10 Numbers in Textbox Using jQuery</div>
+            <div class="panel-body">
+                <form action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="email">Phone Number:</label>
+                        <input type="text" name="phone" class="form-control phone" maxlength="10" placeholder="Phone Number...">
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $('.phone').keypress(function(e) {
+            var arr = [];
+            var kk = e.which;
+
+            for (i = 48; i < 58; i++)
+                arr.push(i);
+
+            if (!(arr.indexOf(kk) >= 0))
+                e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

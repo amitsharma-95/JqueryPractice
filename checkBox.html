@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How To Get Selected Checkbox Value From Checkbox List in jQuery</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+   
+<table id="tblPosts">
+    <tr>
+        <td>
+            <input id="checkbox1" type="checkbox" value="1"/><label>PHP CRUD</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="checkbox2" type="checkbox" value="2"/><label>PHP REST API</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="checkbox3" type="checkbox" value="3"/><label>PHP PDF</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="checkbox3" type="checkbox" value="4"/><label>PHP Import Export</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="checkbox4" type="checkbox" value="5"/><label>PHP Admin Panel</label>
+        </td>
+    </tr>
+</table>
+
+<br />
+
+<input type="button" id="btnClick" value="Get Values"/>
+
+<h4>Selected values are : <span id="chk_values">--</span></h4>
+   
+<script type="text/javascript">
+
+    $(function () {
+
+        $("#btnClick").click(function () {
+        
+            var selected = new Array();
+ 
+            $("#tblPosts input[type=checkbox]:checked").each(function () {
+                selected.push(this.value);
+            });
+ 
+            if (selected.length > 0) {
+                $("#chk_values").text(selected.join(","));
+            }
+        });
+    });
+</script>
+
+</body>
+   
+</html>

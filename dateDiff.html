@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Moment Difference Between Two Dates in Hours Minutes and Seconds</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div style="text-align: center;">
+
+        <h2>Moment Difference Between Two Dates in Hours Minutes and Seconds</h2>
+
+        <h3 id="datetime"></h3>
+    </div>
+
+    <script type="text/javascript">
+        $(function() {
+
+            var startTime = moment('02-01-2021 01:01:01', 'DD-MM-YYYY hh:mm:ss');
+            var endTime = moment('03-01-2021 16:52:53', 'DD-MM-YYYY hh:mm:ss');
+
+            var hoursDiff = endTime.diff(startTime, 'hours');
+            var minutesDiff = endTime.diff(startTime, 'minutes');
+            var secondsDiff = endTime.diff(startTime, 'seconds');
+
+            datetime = 'Hours:' + hoursDiff + ', Minutes:' + minutesDiff + ', Seconds:' + secondsDiff;
+
+            $("#datetime").html(datetime);
+        });
+    </script>
+</body>
+
+</html>

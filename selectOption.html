@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>How To Get Select Option Attribute Value in jQuery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h4>How To Get Select Option Attribute Value in jQuery</h4>
+        <div class="panel panel-primary">
+            <div class="panel-heading">How To Get Select Option Attribute Value in jQuery</div>
+            <div class="panel-body">
+                <select name="dd_select" class="form-control" id="dd_select">
+                    <option value="">Select Option</option>
+                    <option value="value-1" data-id="1">Value 1</option>
+                    <option value="value-2" data-id="2">Value 2</option>
+                    <option value="value-3" data-id="3">Value 3</option>
+                </select>
+                <h4>Value: <span id="txtvalue"></span></h4>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $("#dd_select").on("change", function() {
+                var option_attribute = $('option:selected', this).attr('data-id');
+                $("#txtvalue").text(option_attribute);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        How To Scroll To Specific Element with Animation in JavaScript
+    </title>
+    <style>
+        .scroll {
+            height: 1000px;
+            background-color: lightgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="color: green">
+        How To Scroll To Specific Element with Animation in JavaScript
+    </h1>
+
+    <p>Itaque numquam debitis sunt magna dapibus, diamlorem esse, tempor ullamcorper, cupiditate ut nonummy eaque, ex. Luctus, nulla platea, curae accusantium laboriosam distinctio a consequuntur rutrum fusce metus rutrum minus vestibulum, pellentesque aptent
+        odio, reprehenderit cupidatat, iure mi tempore cubilia, imperdiet, excepturi cumque. Optio elementum senectus a auctor recusandae, deleniti quisque recusandae, corporis. Tortor ducimus dictumst nascetur, soluta deleniti laoreet commodo, auctor
+        quidem aute donec! Tellus sociosqu, risus praesent, illum quidem donec magnam? Pede erat, dolores urna! Suspendisse. In, etiam nostrum diamlorem? Rerum nam sequi architecto natus. Ultrices ipsum enim fringilla quo architecto, dolor netus ridiculus
+        irure, fermentum scelerisque ultricies! Ad.</p>
+
+    <!-- Add More Contents Here To See Scroll Effect -->
+
+    <h3 id="scroll_to_me">Scroll To Me</h3>
+
+    <p>Sint quae ornare dolorum, risus pariatur? Saepe est. Tempora erat incididunt urna possimus dui nisl laboris cras amet nobis auctor class. Curae, proident quibusdam, sodales cillum laudantium irure eaque porta! Pharetra soluta platea curae pretium,
+        in placerat aliquip, provident ullamcorper, molestias rhoncus? Consequatur porttitor impedit perspiciatis ab ac, sequi natus, dolores? Repellendus facere convallis? Ultrices eget debitis lectus posuere lorem. Corporis quam. Nec provident tellus
+        maecenas illo ullamco porttitor mattis vel recusandae mollitia nemo class, placerat per vitae alias dolore, ultrices ut, malesuada, bibendum! Esse, convallis deleniti dictumst rhoncus feugiat, vel torquent unde tempore, itaque amet, dui quam nulla
+        turpis.
+    </p>
+    <p>Sint quae ornare dolorum, risus pariatur? Saepe est. Tempora erat incididunt urna possimus dui nisl laboris cras amet nobis auctor class. Curae, proident quibusdam, sodales cillum laudantium irure eaque porta! Pharetra soluta platea curae pretium,
+        in placerat aliquip, provident ullamcorper, molestias rhoncus? Consequatur porttitor impedit perspiciatis ab ac, sequi natus, dolores? Repellendus facere convallis? Ultrices eget debitis lectus posuere lorem. Corporis quam. Nec provident tellus
+        maecenas illo ullamco porttitor mattis vel recusandae mollitia nemo class, placerat per vitae alias dolore, ultrices ut, malesuada, bibendum! Esse, convallis deleniti dictumst rhoncus feugiat, vel torquent unde tempore, itaque amet, dui quam nulla
+        turpis.
+    </p>
+    <p>Sint quae ornare dolorum, risus pariatur? Saepe est. Tempora erat incididunt urna possimus dui nisl laboris cras amet nobis auctor class. Curae, proident quibusdam, sodales cillum laudantium irure eaque porta! Pharetra soluta platea curae pretium,
+        in placerat aliquip, provident ullamcorper, molestias rhoncus? Consequatur porttitor impedit perspiciatis ab ac, sequi natus, dolores? Repellendus facere convallis? Ultrices eget debitis lectus posuere lorem. Corporis quam. Nec provident tellus
+        maecenas illo ullamco porttitor mattis vel recusandae mollitia nemo class, placerat per vitae alias dolore, ultrices ut, malesuada, bibendum! Esse, convallis deleniti dictumst rhoncus feugiat, vel torquent unde tempore, itaque amet, dui quam nulla
+        turpis.
+    </p>
+    <p>Sint quae ornare dolorum, risus pariatur? Saepe est. Tempora erat incididunt urna possimus dui nisl laboris cras amet nobis auctor class. Curae, proident quibusdam, sodales cillum laudantium irure eaque porta! Pharetra soluta platea curae pretium,
+        in placerat aliquip, provident ullamcorper, molestias rhoncus? Consequatur porttitor impedit perspiciatis ab ac, sequi natus, dolores? Repellendus facere convallis? Ultrices eget debitis lectus posuere lorem. Corporis quam. Nec provident tellus
+        maecenas illo ullamco porttitor mattis vel recusandae mollitia nemo class, placerat per vitae alias dolore, ultrices ut, malesuada, bibendum! Esse, convallis deleniti dictumst rhoncus feugiat, vel torquent unde tempore, itaque amet, dui quam nulla
+        turpis.
+    </p>
+    <p>Sint quae ornare dolorum, risus pariatur? Saepe est. Tempora erat incididunt urna possimus dui nisl laboris cras amet nobis auctor class. Curae, proident quibusdam, sodales cillum laudantium irure eaque porta! Pharetra soluta platea curae pretium,
+        in placerat aliquip, provident ullamcorper, molestias rhoncus? Consequatur porttitor impedit perspiciatis ab ac, sequi natus, dolores? Repellendus facere convallis? Ultrices eget debitis lectus posuere lorem. Corporis quam. Nec provident tellus
+        maecenas illo ullamco porttitor mattis vel recusandae mollitia nemo class, placerat per vitae alias dolore, ultrices ut, malesuada, bibendum! Esse, convallis deleniti dictumst rhoncus feugiat, vel torquent unde tempore, itaque amet, dui quam nulla
+        turpis.
+    </p>
+    <p>Sint quae ornare dolorum, risus pariatur? Saepe est. Tempora erat incididunt urna possimus dui nisl laboris cras amet nobis auctor class. Curae, proident quibusdam, sodales cillum laudantium irure eaque porta! Pharetra soluta platea curae pretium,
+        in placerat aliquip, provident ullamcorper, molestias rhoncus? Consequatur porttitor impedit perspiciatis ab ac, sequi natus, dolores? Repellendus facere convallis? Ultrices eget debitis lectus posuere lorem. Corporis quam. Nec provident tellus
+        maecenas illo ullamco porttitor mattis vel recusandae mollitia nemo class, placerat per vitae alias dolore, ultrices ut, malesuada, bibendum! Esse, convallis deleniti dictumst rhoncus feugiat, vel torquent unde tempore, itaque amet, dui quam nulla
+        turpis.
+    </p>
+    <p>Sint quae ornare dolorum, risus pariatur? Saepe est. Tempora erat incididunt urna possimus dui nisl laboris cras amet nobis auctor class. Curae, proident quibusdam, sodales cillum laudantium irure eaque porta! Pharetra soluta platea curae pretium,
+        in placerat aliquip, provident ullamcorper, molestias rhoncus? Consequatur porttitor impedit perspiciatis ab ac, sequi natus, dolores? Repellendus facere convallis? Ultrices eget debitis lectus posuere lorem. Corporis quam. Nec provident tellus
+        maecenas illo ullamco porttitor mattis vel recusandae mollitia nemo class, placerat per vitae alias dolore, ultrices ut, malesuada, bibendum! Esse, convallis deleniti dictumst rhoncus feugiat, vel torquent unde tempore, itaque amet, dui quam nulla
+        turpis.
+    </p>
+    <p>Sint quae ornare dolorum, risus pariatur? Saepe est. Tempora erat incididunt urna possimus dui nisl laboris cras amet nobis auctor class. Curae, proident quibusdam, sodales cillum laudantium irure eaque porta! Pharetra soluta platea curae pretium,
+        in placerat aliquip, provident ullamcorper, molestias rhoncus? Consequatur porttitor impedit perspiciatis ab ac, sequi natus, dolores? Repellendus facere convallis? Ultrices eget debitis lectus posuere lorem. Corporis quam. Nec provident tellus
+        maecenas illo ullamco porttitor mattis vel recusandae mollitia nemo class, placerat per vitae alias dolore, ultrices ut, malesuada, bibendum! Esse, convallis deleniti dictumst rhoncus feugiat, vel torquent unde tempore, itaque amet, dui quam nulla
+        turpis.
+    </p>
+    <p>Sint quae ornare dolorum, risus pariatur? Saepe est. Tempora erat incididunt urna possimus dui nisl laboris cras amet nobis auctor class. Curae, proident quibusdam, sodales cillum laudantium irure eaque porta! Pharetra soluta platea curae pretium,
+        in placerat aliquip, provident ullamcorper, molestias rhoncus? Consequatur porttitor impedit perspiciatis ab ac, sequi natus, dolores? Repellendus facere convallis? Ultrices eget debitis lectus posuere lorem. Corporis quam. Nec provident tellus
+        maecenas illo ullamco porttitor mattis vel recusandae mollitia nemo class, placerat per vitae alias dolore, ultrices ut, malesuada, bibendum! Esse, convallis deleniti dictumst rhoncus feugiat, vel torquent unde tempore, itaque amet, dui quam nulla
+        turpis.
+    </p>
+    <button onclick="scrollToTop()">
+        Click to scroll to top
+      </button>
+
+    <!-- Add More Contents Here To See Scroll Effect -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        function scrollToTop() {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 'slow');
+            return false;
+        }
+        $(document).ready(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#scroll_to_me").offset().top
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

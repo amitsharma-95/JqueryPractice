@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How To Disable Browser Back Button Using jQuery Tutorial</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .disablebackbtn{
+            margin-top:150px !important;
+            padding:50px 20px !important;
+            text-align: center;
+            width: 50%;
+            height: 50%;
+            background:#ddd;
+            border: 2px solid red;
+        }
+        .container p{
+            font-size:25px;
+            font-weight: bold;
+        }
+        .disable-btn {
+            margin-top:50px !important;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .disable-btn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+    </style>
+</head>
+<body>  
+    <div class="disablebackbtn mt-5 mx-auto">
+        <div class="container">
+            <p>How To Disable Browser Back Button Using jQuery Tutorial</p>
+        </div>
+  </div>
+</body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            window.history.pushState(null, "", window.location.href);        
+            window.onpopstate = function() {
+                window.history.pushState(null, "", window.location.href);
+            };
+        });
+    </script>
+</html>
